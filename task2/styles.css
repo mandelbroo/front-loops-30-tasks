@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.site {
+  background: url('./img/background.jpg') 50% 50% no-repeat;
+  display: flex;
+  justify-content: center;
+  height: 800px;
+}
+
+.card {
+  margin-top: 100px;
+  background-color: white;
+  width: 350px;
+  height: 320px;
+  border-radius: 5px;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.head h1 {
+  font-family: Roboto, sans-serif;
+  font-size: 22px;
+  font-size: 22px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #444;
+}
+.step-dots {
+  margin-top: 10px;
+}
+.step-dots .dot {
+  height: 6px;
+  width: 6px;
+  background-color: #eee;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 3px;
+}
+.step-dots .dot:last-child {
+  margin-right: 0;
+}
+.step-dots .dot.active {
+  background-color: #bbb;
+}
+.step-dots .dot:hover {
+  background-color: #bbb;
+}
+
+.payment-method-list {
+
+}
+.payment-method {
+  border-top: solid 1px #eee;
+  display: flex;
+  align-items: center;
+  padding: 18px 28px;
+  position: relative;
+  cursor: pointer;
+}
+.payment-method:hover{
+  background-color: #eee;
+}
+.payment-method img {
+  width: 42px;
+}
+.payment-method .method-name {
+  margin-left: 20px;
+  font-family: Roboto, sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+  color: #aaa;
+}
+.payment-method.active .method-name {
+  color: #111;
+}
+.payment-method.active::after {
+  content: '';
+  background: url(./img/check.svg) 50% 50% no-repeat;
+  width: 19px;
+  height: 19px;
+  background-size: 100%;
+  position: absolute;
+  right: 20px;
+}
+
+.footer {
+  height: 50px;
+  position: relative;
+}
+button.next-step {
+  border: 0;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #678af1;
+  color: white;
+  width: 100%;
+  height: 50px;
+  font-family: Roboto, sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 16px;
+  cursor: pointer;
+  outline: none;
+}
+button.next-step:active {
+  height: 47px;
+  margin-top: 3px;
+}
+button.next-step::after {
+  content: '';
+  background: url(./img/arrow.svg) 50% 50% no-repeat;
+  width: 15px;
+  height: 15px;
+  background-size: 100%;
+  position: absolute;
+  margin-left: 5px;
+}
