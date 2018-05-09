@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+}
+
+.site {
+  background: #46a88d;
+  display: flex;
+  justify-content: center;
+  height: 800px;
+  width: 100%;
+}
