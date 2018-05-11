@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+.site {
+  background: linear-gradient(to bottom right, rgb(210, 224, 224), rgb(79, 132, 177));
+  display: flex;
+  justify-content: center;
+  height: 800px;
+  width: 100%;
+}
+
+.messenger-box {
+  background: white;
+  width: 450px;
+  height: 550px;
+  margin-top: 120px;
+}
+
+.head {
+  background: rgba(82, 114, 195, 0.9);
+  color: white;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+}
+.online-status {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  margin-left: 20px;
+  background-color: white;
+}
+.companion {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  margin-left: 15px;
+}
+.icon-close {
+  position: absolute;
+  right: 24px;
+  width: 20px;
+  height: 20px;
+  opacity: 0.6;
+}
+.icon-close:hover {
+  opacity: 1;
+}
+.icon-close:before, .icon-close:after {
+  position: absolute;
+  left: 9px;
+  content: ' ';
+  height: 20px;
+  width: 2px;
+  background-color: white;
+}
+.icon-close:before {
+  transform: rotate(45deg);
+}
+.icon-close:after {
+  transform: rotate(-45deg);
+}
+
+
+.content {
+
+}
+
+footer {
+
+}
