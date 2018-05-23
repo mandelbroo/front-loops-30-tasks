@@ -1,0 +1,13 @@
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+.site {
+  background: gray;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 800px;
+  width: 100%;
+}
