@@ -4,10 +4,42 @@ body {
 }
 
 .site {
-  background: gray;
+  background: #434751;
   background-size: cover;
   display: flex;
   justify-content: center;
   height: 800px;
   width: 100%;
+}
+
+.signup-container {
+  margin-top: 60px;
+  width: 1000px;
+  height: 600px;
+  border-radius: 5px;
+  box-shadow: 5px 10px 20px rgba(0,0,0,0.5);
+  position: relative;
+}
+
+.left-panel {
+  float: left;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 61%;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background: #fff;
+  z-index: 1;
+}
+
+.right-panel {
+  float: right;
+  height: 100%;
+}
+.right-panel img {
+  height: 100%;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
