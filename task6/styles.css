@@ -32,6 +32,19 @@ body {
   border-bottom-left-radius: 5px;
   background: #fff;
   z-index: 1;
+  padding: 50px;
+  box-sizing: border-box;
+}
+.headline {
+  font-weight: 300;
+  font-size: 38px;
+  letter-spacing: 0.6px;
+  margin: 15px 0;
+}
+.subheadline {
+  color: #aaa;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .right-panel {
@@ -43,3 +56,29 @@ body {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+.social-buttons {
+  list-style: none;
+  padding: 50px 0;
+}
+.social-buttons .btn {
+  -webkit-appearence: none;
+  border: solid 1px #ddd;
+  width: 100%;
+  padding: 16px;
+  background: #fff;
+  border-radius: 4px;
+}
+.social-buttons li { margin-top: 20px; }
+.social-buttons li:first-child { margin-top: 0; }
+
+.bottom {
+  margin-top: 50px;
+  border-top: solid 1px #ddd;
+  padding-top: 35px;
+}
+.bottom .notice {
+  float: left;
+  font-size: 13px;
+  font-weight: bold;
+}
+.bottom a { float: right; }
