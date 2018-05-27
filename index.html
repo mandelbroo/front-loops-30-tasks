@@ -4,14 +4,57 @@
     <meta charset="utf-8">
     <title>Front Loops 30 Taks</title>
   </head>
+  <style media="screen">
+    body,
+    ul {
+      margin: 0;
+    }
+    iframe { border: 0; }
+    .examle-list {
+      position: relative;
+      text-align: center;
+    }
+    .examle-list a {
+      position: absolute;
+      display: block;
+      font-family: 'Roboto', sans-serif;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #eee;
+      text-shadow: 2px 2px 6px #000;
+    }
+    .examle-list a:hover { color: #fff; }
+    .iframes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: black;
+    }
+  </style>
   <body>
-    <ul>
-      <li><a href="task1/index.html">task 1 - Card with 3 items: mobile, desktop and tv</a></li>
-      <li><a href="task2/index.html">task 2 - Payment methods select</a></li>
-      <li><a href="task3/index.html">task 3 - Bicycle order</a></li>
-      <li><a href="task4/index.html">task 4 - Messenger box</a></li>
-      <li><a href="task5/index.html">task 5 - Flight order</a></li>
-      <li><a href="task6/index.html">task 6 - Registration page</a></li>
+    <ul class="examle-list">
+      <a href="task1/index.html" class="example-item">Task 1: Card with 3 items: mobile, desktop and tv</a>
+      <a href="task2/index.html" class="example-item">Task 2: Payment methods select</a>
+      <a href="task3/index.html" class="example-item">Task 3: Bicycle order</a>
+      <a href="task4/index.html" class="example-item">Task 4: Messenger box</a>
+      <a href="task5/index.html" class="example-item">Task 5: Flight order</a>
+      <a href="task6/index.html" class="example-item">Task 6: Registration page</a>
     </ul>
+    <div class="iframes">
+      <iframe src="./task1/index.html" title="items" width="1400" height="800"></iframe>
+      <iframe src="./task2/index.html" title="items" width="1400" height="800"></iframe>
+      <iframe src="./task3/index.html" title="items" width="1400" height="800"></iframe>
+      <iframe src="./task4/index.html" title="items" width="1400" height="800"></iframe>
+      <iframe src="./task5/index.html" title="items" width="1400" height="800"></iframe>
+      <iframe src="./task6/index.html" title="items" width="1400" height="800"></iframe>
+    </div>
+    <script type="text/javascript">
+      let items = document.querySelectorAll('.example-item')
+      let marginTop = 5;
+      [].forEach.call(items, (item) => {
+        item.style.marginTop = `${marginTop}px`;
+        marginTop += 805;
+      });
+    </script>
   </body>
 </html>
