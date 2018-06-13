@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+.site {
+  background: #F2CE97;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 800px;
+  width: 100%;
+}
+
+.card {
+  margin-top: 60px;
+  width: 1000px;
+  height: 550px;
+  box-shadow: 0px 5px 30px rgba(0,0,0,0.3);
+  position: relative;
+  display: flex;
+}
+.left {
+  background: #484956;
+  width: 35%;
+  padding: 30px 40px;
+}
+.right {
+  background: white;
+  width: 65%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.left .heading {
+  color: white;
+  font-weight: lighter;
+  position: relative;
+  letter-spacing: -0.5px;
+}
+.left .heading b {
+  display: block;
+}
+.left .heading::after {
+  content: '';
+  border-bottom: 4px solid #E37B62;
+  width: 60px;
+  height: 4px;
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+}
+.left .author {
+  color: white;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  letter-spacing: -0.5px;
+  bottom: 50px;
+  left: 40px;
+  position: absolute;
+}
+.left .author img {
+  border-radius: 50%;
+  box-shadow: 0 6px 12px 2px rgba(0,0,0,0.3);
+  width: 68px;
+  height: 100%;
+  margin-right: 15px;
+}
+
+.right .text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  padding: 40px 40px 0;
+  color: #444;
+}
+.right .text .capital {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: bold;
+  color: black;
+}
+.right .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  padding: 0 40px;
+  box-shadow: 0px -4px 32px -2px rgba(0,0,0,.1);
+}
+.right .icons {
+  display: flex;
+}
+.right .bottom .comments-count {
+  position: relative;
+  color: #aaa;
+}
+.right .bottom .comments-count::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-image: url('./img/comment.svg');
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -32px;
+  bottom: -3px;
+}
+.right .bottom .more {
+  position: relative;
+  width: 24px;
+  margin-left: 20px;
+}
+.right .bottom .more::before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  background-image: url('./img/more.svg');
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -3px;
+}
