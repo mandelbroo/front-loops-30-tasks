@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
+
+body, ul, h1, h2, h3, h4, h5 {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+.site {
+  background: #F8E8E5;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 800px;
+  width: 100%;
+}
+.card {
+  margin-top: 60px;
+  width: 950px;
+  height: 620px;
+  box-shadow: 0 45px 50px -20px rgba(114, 19, 20,.4);
+  position: relative;
+  display: flex;
+}
+
+.left {
+  width: 36%;
+  background: url(./img/background.jpg) 50% 50% no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.right {
+  background: white;
+  width: 64%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.left button.back {
+  border: 0;
+  background: transparent;
+  color: #666;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: bold;
+  letter-spacing: -.5px;
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  cursor: pointer;
+}
+.left button.back::before {
+  content: '';
+  background: currentColor;
+  mask: url('./img/arrow-back.svg') center no-repeat;
+  mask-size: 85%;
+  -webkit-mask: url('./img/arrow-back.svg') center no-repeat;
+  -webkit-mask-size: 85%;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: -16px;
+  top: -3px;
+}
+.left button.back:hover { color: #111; }
+
+.right ul.tabs {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  padding: 32px 36px;
+  color: #666;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: -.2px;
+}
+.right ul.tabs li { cursor: pointer; }
+.right ul.tabs li.active, .right ul.tabs li:hover { color: #111; }
+.right ul.tabs li:not(:first-child) { margin-left: 30px; }
+
+.right .post {
+  padding: 80px 90px 0;
+}
+.right .post .heading {
+  font-family: 'Playfair Display', 'Liberation Serif', serif;
+  font-weight: lighter;
+  font-size: 60px;
+  letter-spacing: -1px;
+  line-height: 62px;
+  position: relative;
+}
+.right .post .heading::after {
+  content: '';
+  width: 96px;
+  height: 4px;
+  background-color: black;
+  position: absolute;
+  bottom: 24px;
+  right: 10px;
+}
+.right .post .subheading {
+  font-family: 'Playfair Display', 'Liberation Serif', serif;
+  font-size: 17px;
+  font-weight: normal;
+  margin: 26px 0 36px;
+}
+.right .post .subheading b { font-weight: bold; }
+.right .post .photos img {
+  width: 175px;
+}
+
+.right .post .content { display: flex; }
+
+.right .post .content .overlay {
+  position: relative;
+}
+.right .post .content .overlay::before {
+  content: '';
+  background-color: rgba(255,255,255, .7);
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: calc(50% - 20px);
+  top: calc(50% - 20px);
+  border-radius: 50%;
+}
+.right .post .content .overlay::after {
+  content: '';
+  background: url(./img/play.svg) center no-repeat;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: calc(50% - 10px);
+  top: calc(50% - 10px);
+}
+.right .post .content .photos {
+  margin-right: 38px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 5px;
+}
+.right .post .content .photos .link {
+  color: #111;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-flex;
+}
+.right .post .content .photos .link::after {
+  content: '';
+  background: currentColor;
+  mask: url('./img/arrow-forward.svg') center no-repeat;
+  mask-size: 85%;
+  -webkit-mask: url('./img/arrow-forward.svg') center no-repeat;
+  -webkit-mask-size: 85%;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: -3px;
+  margin-left: 5px;
+}
+.right .post .content .text {
+  line-height: 30px;
+  font-size: 15px;
+}
