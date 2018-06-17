@@ -157,10 +157,9 @@ body, ul, h1, h2, h3, h4, h5 {
   mask-size: 85%;
   -webkit-mask: url('./img/arrow-forward.svg') center no-repeat;
   -webkit-mask-size: 85%;
-  position: absolute;
   width: 18px;
   height: 18px;
-  top: -3px;
+  margin-top: -3px;
   margin-left: 5px;
 }
 .right .post .content .text {
