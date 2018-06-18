@@ -1,0 +1,101 @@
+body, ul, h1, h2, h3, h4, h5 {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+ul {
+  list-style: none;
+}
+
+.site {
+  background: #F4C66F;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  height: 800px;
+  width: 100%;
+}
+.card {
+  margin-top: 100px;
+  width: 950px;
+  height: 520px;
+  box-shadow: 0 45px 50px -20px rgba(0,0,0,.4);
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.left {
+  width: 36%;
+  background: #eee;
+  position: relative;
+}
+.right {
+  background: white;
+  width: 64%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.left .head {
+  padding: 40px 0;
+}
+.right .head {
+  padding: 40px;
+}
+.head h1 {
+  font-size: 24px;
+  font-weight: normal;
+}
+.head .plus-button {
+  border: none;
+  background: transparent;
+  font-size: 38px;
+  line-height: 28px;
+  font-weight: normal;
+  padding: 0;
+}
+.head .amount {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.payment-methods {
+  padding: 0 40px 0;
+  overflow-y: scroll;
+  height: 100%;
+}
+.payment-methods .method {
+  background: white;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  color: #555;
+  letter-spacing: -0.3px;
+  margin: 30px 0;
+}
+.payment-methods .method:nth-child(2) {
+  margin: 0;
+}
+.payment-methods .method.active,
+.payment-methods .method:hover {
+  box-shadow: 0 0 0 2px #6178bd;
+}
+.payment-methods .method .card-number {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.payment-methods .method .expiration { font-size: 15px; }
+.payment-methods .method img {
+  width: 70px;
+  margin-bottom: 15px;
+}
+
+.payments {
+  overflow-y: scroll;
+}
