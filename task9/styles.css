@@ -7,6 +7,11 @@ ul {
   list-style: none;
 }
 
+* {
+  text-shadow: none;
+  color: black;
+}
+
 .site {
   background: #F4C66F;
   background-size: cover;
@@ -17,9 +22,9 @@ ul {
 }
 .card {
   margin-top: 100px;
-  width: 950px;
+  width: 930px;
   height: 520px;
-  box-shadow: 0 45px 50px -20px rgba(0,0,0,.4);
+  box-shadow: 0 45px 50px -35px rgba(0,0,0,.4);
   position: relative;
   display: flex;
   overflow: hidden;
@@ -40,12 +45,13 @@ ul {
   border-bottom-right-radius: 4px;
 }
 
+.right .head {
+  border-bottom: 1px solid #ccc;
+}
 .head {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-}
-.head {
   padding: 40px 0;
 }
 .head h1 {
@@ -64,40 +70,96 @@ ul {
   font-size: 30px;
   font-weight: bold;
 }
-.payments,
+
 .payment-methods {
-  padding: 0 30px 0 40px; /* -10px on right for scrollbar */
-  overflow-y: scroll;
+  padding: 0 30px 0 40px;
   height: 100%;
 }
-.payment-methods .method {
+.method {
   background: white;
   padding: 12px;
   border-radius: 5px;
   border: 1px solid #ccc;
-  color: #555;
   letter-spacing: -0.3px;
   margin: 30px 0;
 }
-.payment-methods .method:nth-child(2) {
+.method:nth-child(2) {
   margin: 0;
 }
-.payment-methods .method.active,
-.payment-methods .method:hover {
+.method.active,
+.method:hover {
   box-shadow: 0 0 0 2px #6178bd;
 }
-.payment-methods .method .card-number {
+.method .card-number {
   font-size: 18px;
   margin-bottom: 5px;
 }
-.payment-methods .method .expiration { font-size: 15px; }
-.payment-methods .method img {
+.method .expiration {
+  font-size: 15px;
+}
+.method .card-number, .method .expiration,
+.method .card-number span, .method .expiration span { color: #555; }
+.method img {
   width: 70px;
   margin-bottom: 15px;
 }
 
-/*  customize scrollbar */
+.payments {
+  padding: 0 40px 0 50px;
+}
+.payments .cents {
+  font-size: .65em;
+  position: relative;
+  top: -.5em;
+}
 
+.expense .amount, .expense .amount .cents { color: #7E8BB6; }
+.income .amount, .income .amount .cents{ color: #A2DB80; }
+
+.payment {
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  position: relative;
+}
+.payment:last-child { padding-bottom: 50px; }
+.payment:before {
+  content: '';
+  border-radius: 50%;
+  border: 1px solid #bbb;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: lighter;
+}
+.payment.expense:before { content: '–'; }
+.payment.income:before { content: '+'; }
+.payment .amount {
+  font-weight: bolder;
+  font-size: 19px;
+  position: absolute;
+  right: 0;
+}
+.payment .info {
+  position: relative;
+  left: 40px;
+}
+.payment .info .description {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.payment .info .reference,
+.payment .info .date {
+  color: #bbb;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/*  customize scrollbar */
 .custom-scroll::-webkit-scrollbar,
 .custom-scroll::-webkit-scrollbar-thumb {
   width: 10px;
@@ -115,6 +177,6 @@ ul {
   transition: color .5s ease;
   color: rgba(0, 0, 0, 0);
   text-shadow: 0 0 black;
+  overflow-y: scroll;
 }
-
 /*  end customize scrollbar*/
