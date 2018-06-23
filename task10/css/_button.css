@@ -1,0 +1,11 @@
+.cta {
+  max-width: 160px;
+  background-color: #EA625C;
+  color: white;
+  border: 0;
+  padding: 12px 8px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: -0.5px;
+  text-transform: uppercase;
+}

@@ -1,0 +1,11 @@
+.heading {
+  font-size: 40px;
+  color: #333;
+}
+
+.body-copy {
+  color: #aaa;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 20px;
+}
