@@ -6,3 +6,7 @@ body, ul, h1, h2, h3, h4, h5 {
 ul {
   list-style: none;
 }
+
+.site {
+  background-color: white;
+}
