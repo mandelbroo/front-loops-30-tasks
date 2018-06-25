@@ -3,7 +3,10 @@
   justify-content: space-between;
   width: 900px;
   padding: 40px 0;
-  margin: 0 auto;
+  position: absolute;
+  transform: translate3d(-50%,0,0);
+  left: 50%;
+  z-index: 4;
 }
 
 .header .logo a {
@@ -19,7 +22,7 @@
 }
 
 .header .navbar li {
-  margin-left: 40px;
+  margin-left: 35px;
 }
 
 .header .navbar a {
