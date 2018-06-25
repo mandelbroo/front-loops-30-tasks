@@ -12,7 +12,7 @@
 
 .text-on-background .right,
 .text-on-background .left {
-  width: 42%;
+  width: 45%;
 }
 .text-on-background .right {
   position: absolute;
@@ -40,18 +40,6 @@
 }
 .text-on-background .heading {
   margin-bottom: 50px;
-}
-.text-on-background .body-copy {
-  position: relative;
-  padding-left: 30px;
-}
-.text-on-background .body-copy::before {
-  content: '';
-  position: relative;
-  border-left: 2px solid #aaa;
-  left: 0;
-  position: absolute;
-  height: 100%;
 }
 .text-on-background .cta {
   margin-top: 40px;
