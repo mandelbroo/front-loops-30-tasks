@@ -1,5 +1,22 @@
 .text-on-background.watch {
-  background: url(../img/watches.jpg) 135%/45% 100% no-repeat;
+  background: url(../img/watches.jpg) 135% 100% no-repeat;
+  background-size: 45%;
+}
+.text-on-background.runners {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/runners.jpg) 50% 40% no-repeat;
+  background-size: 100% 142%;
+}
+.text-on-background.light-text .heading { color: white; }
+.text-on-background.light-text .body-copy { color: white; }
+.text-on-background.light-text .body-copy::before { border-color: white; }
+
+.text-on-background .right,
+.text-on-background .left {
+  width: 42%;
+}
+.text-on-background .right {
+  position: absolute;
+  right: 0;
 }
 
 .text-on-background.border {
@@ -7,8 +24,9 @@
 }
 
 .text-on-background {
-  height: 580px;
+  height: 720px;
   position: relative;
+  display: flex;
 }
 
 .text-on-background .wrapper {
@@ -19,13 +37,11 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
-  top: 90px;
 }
 .text-on-background .heading {
   margin-bottom: 50px;
 }
 .text-on-background .body-copy {
-  width: 42%;
   position: relative;
   padding-left: 30px;
 }
