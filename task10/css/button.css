@@ -1,5 +1,5 @@
 .cta {
-  max-width: 160px;
+  min-width: 160px;
   background-color: #EA625C;
   color: white;
   border: 0;
