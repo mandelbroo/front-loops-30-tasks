@@ -40,9 +40,17 @@
 .header .navbar a:hover::after,
 .header .navbar .active a::after {
   content: '';
-  border-bottom: 1px solid currentColor;
+  border-bottom: 2px solid currentColor;
   position: absolute;
   width: 100%;
-  bottom: -3px;
+  bottom: -10px;
   left: 0;
+}
+
+.header .navbar input.search {
+  border: 0;
+  border-bottom: 1px solid #777;
+  outline: 0;
+  padding-bottom: 3px;
+  background: transparent;
 }

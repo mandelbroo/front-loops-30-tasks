@@ -54,4 +54,9 @@
   width: 30px;
   margin-bottom: 4px;
   margin-right: 16px;
+  transition: width .2s;
+}
+
+.three-column-text .column-text .link:hover::before {
+  width: 40px;
 }
