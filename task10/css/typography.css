@@ -9,3 +9,13 @@
   font-weight: bold;
   line-height: 20px;
 }
+
+@media (max-width: 600px) {
+  .heading {
+    font-size: 28px;
+  }
+
+  .body-copy {
+    font-size: 12px;
+  }
+}

@@ -60,3 +60,21 @@
 .three-column-text .column-text .link:hover::before {
   width: 40px;
 }
+
+@media (max-width: 600px) {
+  .three-column-text {
+    width: auto;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 50px 10% 0;
+  }
+
+  .three-column-text .column-text {
+    width: auto;
+    padding: 0 0 50px;
+  }
+
+  .three-column-text .column-text .headline {
+    margin-bottom: 20px;
+  }
+}

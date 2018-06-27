@@ -55,3 +55,19 @@
   padding-bottom: 3px;
   background: transparent;
 }
+
+@media (max-width: 600px) {
+  .header {
+    position: relative;
+    left: 0;
+    transform: none;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 30px;
+    width: 100%;
+  }
+
+  .header .navbar {
+    display: none;
+  }
+}

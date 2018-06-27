@@ -43,10 +43,52 @@
   flex-direction: column;
   justify-content: center;
   position: relative;
+  z-index: 10;
 }
 .text-on-background .heading {
   margin-bottom: 50px;
 }
 .text-on-background .cta {
   margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+  .text-on-background {
+    height: 760px;
+  }
+
+  .text-on-background .wrapper {
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px 10% 0;
+  }
+
+  .text-on-background.runners .wrapper {
+    justify-content: center;
+  }
+
+  .text-on-background .left,
+  .text-on-background .right {
+    text-align: center;
+    width: 100%;
+    position: relative;
+  }
+
+  .text-on-background.watch::after {
+    bottom: 0;
+    width: 500px;
+  }
+
+  .text-on-background .heading {
+    margin-bottom: 30px;
+  }
+
+  .text-on-background .body-copy {
+    padding-left: 0;
+  }
+
+  .text-on-background .body-copy.dash::before {
+    display: none;
+  }
 }
