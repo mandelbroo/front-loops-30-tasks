@@ -7,7 +7,7 @@
   position: absolute;
   transform: translate3d(-50%,0,0);
   left: 50%;
-  z-index: 4;
+  z-index: 99;
 }
 
 .header .logo a {
@@ -17,29 +17,26 @@
   width: 24px;
 }
 
-.header .navbar {
+.navbar {
   display: flex;
   align-items: center;
 }
-
-.header .navbar li {
+.navbar li {
   margin-left: 35px;
 }
-
-.header .navbar a {
+.navbar a {
   color: #aaa;
   font-size: 13px;
   font-weight: bold;
   text-decoration: none;
   position: relative;
 }
-
-.header .navbar a:hover,
-.header .navbar .active a {
+.navbar a:hover,
+.navbar .active a {
   color: #777;
 }
-.header .navbar a:hover::after,
-.header .navbar .active a::after {
+.navbar a:hover::after,
+.navbar .active a::after {
   content: '';
   border-bottom: 2px solid currentColor;
   position: absolute;
@@ -47,13 +44,13 @@
   bottom: -10px;
   left: 0;
 }
-
-.header .navbar input.search {
+.navbar input.search {
   border: 0;
   border-bottom: 1px solid #777;
   outline: 0;
   padding-bottom: 3px;
   background: transparent;
+  width: 150px;
 }
 
 @media (max-width: 600px) {
@@ -63,11 +60,65 @@
     transform: none;
     width: 100%;
     box-sizing: border-box;
-    padding: 30px;
+    padding: 10% 30px;
     width: 100%;
   }
 
   .header .navbar {
     display: none;
+  }
+
+  .navbar {
+    flex-direction: column;
+    margin-top: 120px;
+  }
+  .navbar li {
+    margin: 20px 0;
+  }
+  .navbar a {
+    font-size: 16px;
+  }
+
+  .header .burger {
+    display: block !important;
+    background: transparent;
+    border: 0;
+    font-size: 19px;
+    height: 35px;
+    line-height: 35px;
+    outline: none;
+    position: relative;
+    vertical-align: middle;
+    text-align: center;
+    width: 35px;
+    padding-top: 10px;
+  }
+
+  .navbar-mobile {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    z-index: 999;
+  }
+
+  .navbar-mobile .cross {
+    display: inline-block;
+    color: #abaeb7;
+    height: 35px;
+    line-height: 32px;
+    font-size: 25px;
+    color: #abaeb7;
+    border: none;
+    background: transparent;
+    vertical-align: middle;
+    outline: none;
+    position: absolute;
+    right: 33px;
+    top: 46px;
   }
 }
