@@ -1,6 +1,7 @@
 .three-column-text {
   display: flex;
-  width: 900px;
+  max-width: 900px;
+  width: 90%;
   margin: 0 auto;
   padding: 50px 0;
 }
