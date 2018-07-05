@@ -1,0 +1,137 @@
+body, ul, h1, h2, h3, h4, h5 {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+
+* {
+  text-shadow: none;
+  color: black;
+}
+
+body { background: #DE8A89; }
+
+.site {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 800px;
+  width: 900px;
+  margin: 0 auto;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tabs .tab {
+  color: rgba(255,255,255,.4);
+  font-size: 60px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin-right: 50px;
+  cursor: pointer;
+}
+.tabs .tab:last-child { margin-right: 0; }
+.tabs .tab.active { color: white; }
+.tabs .tab:hover:not(.active) { color: rgba(255,255,255,.6); }
+
+.notice {
+  margin-top: 10px;
+  width: 75%;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.card {
+  margin-top: 60px;
+  width: 100%;
+  height: 300px;
+  position: relative;
+  display: flex;
+  box-shadow: 0 8px 25px rgba(0,0,0,.4);
+  z-index: 1;
+}
+
+button.prev, button.next {
+  border: 0;
+  background: transparent;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  padding: 0;
+  background: #EBB9B8;
+  z-index: 5;
+  cursor: pointer;
+}
+button.prev { left: -100px; }
+button.next { right: -100px; }
+button.prev:hover, button.next:hover { background: #F0C9CA; }
+button.prev::after {
+  content: '';
+  position: absolute;
+  border-top: 7px solid transparent;
+  border-right: 7px solid #855352;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid transparent;
+  left: 40%;
+  top: 45%;
+}
+button.next::after {
+  content: '';
+  position: absolute;
+  border-top: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #855352;
+  left: 45%;
+  top: 45%;
+}
+
+.tile {
+  width: 33.34%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tile:first-of-type {
+  background: #3E3C3D;
+  position: relative;
+}
+.tile:nth-of-type(2) { background: #353334; }
+.tile:last-of-type { background: #201E1F; }
+.tile .attribute {
+  color: #DE8A89;
+  margin-bottom: 10px;
+}
+.tile .value { color: white; }
+.tile .content {
+  position: relative;
+  left: -40px;
+}
+
+button.start {
+  width: 85%;
+  border: 0;
+  height: 60px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -30px;
+  background: #131313;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: -0.8px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+button.start:hover {
+  bottom: -28px;
+}
