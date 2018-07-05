@@ -11,27 +11,33 @@
 <body>
   <div class="site">
     <ul class="tabs">
-      <li>Synthetic</li>
-      <li>Wool</li>
-      <li>Denim</li>
-      <li>Silk</li>
-      <li>Linen</li>
+      <li class="tab active">Synthetic</li>
+      <li class="tab">Wool</li>
+      <li class="tab">Denim</li>
+      <li class="tab">Silk</li>
+      <li class="tab">Linen</li>
     </ul>
     <div class="notice">Loads should be under 8 pounds. It is recommended using natural detergent to prevent damage to the cloth and to improve the washing results.</div>
     <div class="card">
       <button class="prev" type="button" name="button"></button>
       <div class="tile">
-        <h5>Timer</h5>
-        <h2>45 min</h2>
-        <button class="start" type="button" name="button"></button>
+        <div class="content">
+          <h3 class="attribute">Timer</h3>
+          <h1 class="value">45 min</h1>
+        </div>
+        <button class="start" type="button" name="button">Start</button>
       </div>
       <div class="tile">
-        <h5>Temperature</h5>
-        <h2>Cold</h2>
+        <div class="content">
+          <h3 class="attribute">Temperature</h3>
+          <h1 class="value">Cold</h1>
+        </div>
       </div>
       <div class="tile">
-        <h5>Load</h5>
-        <h2>Medium</h2>
+        <div class="content">
+          <h3 class="attribute">Load</h3>
+          <h1 class="value">Medium</h1>
+        </div>
       </div>
       <button class="next" type="button" name="button"></button>
     </div>
