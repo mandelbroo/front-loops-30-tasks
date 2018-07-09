@@ -54,6 +54,7 @@ form .button-block {
 .hover-effect {
   color: #333;
   opacity: 0.6;
+  cursor: pointer;
 }
 
 .hover-effect:hover {
@@ -97,6 +98,7 @@ form .button-block {
   display: flex;
   flex-direction: column;
   left: 50px;
+  margin-top: 15px;
   min-height: 68%;
   width: 100%;
   padding: 50px 40px 30px;
