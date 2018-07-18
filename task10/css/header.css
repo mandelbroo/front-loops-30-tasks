@@ -58,9 +58,8 @@
     position: relative;
     left: 0;
     transform: none;
-    width: 100%;
     box-sizing: border-box;
-    padding: 10% 30px;
+    padding: 30px;
     width: 100%;
   }
 
